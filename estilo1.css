@@ -192,6 +192,12 @@ body {
         color:whitesmoke;
         
       }
+      .iconCarta {
+        width: 68px;
+        height: 68px;
+        object-fit: contain;
+        opacity: 0.66;
+      }
 
     
 
