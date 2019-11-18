@@ -56,6 +56,7 @@ body {
     height: 64px;
     object-fit: contain;
     margin-top: 10%;
+    opacity: 0.6;
   }
 
   .icons8-sair-100-2 {
@@ -140,6 +141,7 @@ body {
       width: 189px;
       height: 51px;
       background-color: #25aeeb;
+      
   }
 
   .dia {font-family: helvetica, arial; font-size: 8pt; color: #FFFFFF}
@@ -151,3 +153,18 @@ body {
         margin-left: -63%;
         margin-top: -6.3%;
     }
+    .iconCarta {
+        width: 68px;
+        height: 68px;
+        object-fit: contain;
+        opacity: 0.66;
+     }
+
+     .form-control{
+        background-color: transparent;
+         color-adjust: whitesmoke;
+
+
+
+     }
+
