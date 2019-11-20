@@ -73,7 +73,7 @@ body {
     opacity: 0.66;
  }
 
-.Titulo {
+.EscreverUsuario {
   width: 134px;
   height: 32px;
   font-family: MiriamCLM;
@@ -89,110 +89,6 @@ body {
   margin-left: 80%;
 
 }
-
-.Nome {
-    width: 196px;
-    height: 51px;
-    border: solid 3px #f3f3f3;
-    background-color: #042c3f;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2.3;
-    letter-spacing: normal;
-    text-align: center;
-    color:white;
-
-}
-
-.Situação {
-    width: 196px;
-    height: 51px;
-    border: solid 3px #f3f3f3;
-    background-color: #042c3f;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    text-align: center;
-    color:white;
-  }
-
-  .Modificações {
-    width: 196px;
-    height: 51px;
-    border: solid 3px #f3f3f3;
-    background-color: #042c3f;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    text-align: center;
-    color: white;
-  }
-
-  .UsuarioShark{
-    width: 197px;
-    height: 51px;
-    border: solid 2px#40b9ef;
-    background-color: #113c52;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: -10px;
-    letter-spacing: normal;
-    text-align: center;
-    color: whitesmoke;
-   
-  }
-
-  .Preencher_Modificação{
-    width: 197px;
-    height: 51px;
-    border: solid 2px #40b9ef;
-    background-color: #113c52;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: -10px;
-    letter-spacing: normal;
-    text-align: center;
-    color:whitesmoke;
-    
-  }
-
-  .Preencher_Situação{
-    width: 197px;
-    height: 50px;
-    border: solid 2px #25aeeb;
-    background-color: #113c52;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: -10px;
-    letter-spacing: normal;
-    text-align: center;
-    color:whitesmoke;
-    
-  }
-
 
   .Caminho-6 {
     width: 620px;
@@ -230,9 +126,10 @@ body {
     line-height: 1.33;
     letter-spacing: normal;
     text-align: center;
-    color: #000000;
-    margin-left: 58%;
+    color: white;
+    margin-left: 13%;
     margin-top: 0%;
+    white-space: nowrap;
   
   }
 
@@ -287,5 +184,40 @@ body {
     width: 40px;
     height: 40px;
     object-fit: contain;
-    margin-top: 2%;
+    margin-top: ;
  }
+
+ td{
+     border: 1px solid #25aeeb;
+     padding: 1em 1em;
+    
+ }
+
+
+ .Escrever {
+    width: 134px;
+    height: auto;
+    font-family: MiriamCLM;
+    font-size: auto;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+    white-space: normal;
+    
+  }
+
+  .EscreverTitulosTabela{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+  }
