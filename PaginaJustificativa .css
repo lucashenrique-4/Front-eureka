@@ -223,9 +223,7 @@ body {
       background: #25aeeb;
       display: block;
       border: solid 2px whitesmoke;
-    
-      transition: 1s;
-    }
+      }
     
     .botao:hover {
       opacity: 5;
