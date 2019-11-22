@@ -74,8 +74,8 @@
                                                 <form action="#" class="form-contact" method="post" tabindex="1">  
                                                    <input type="text" class="form-contact-input" name="nome" placeholder="Nome Completo" autocomplete="off"   autofocus required />  
                                                    <input type="text" class="form-contact-input" name="matricula" placeholder="Matrícula" autocomplete="off" required />  
-                                                   <input type="text" class="form-contact-input" name="cpf" placeholder="CPF"  maxlength= "11" autocomplete="off"  required />  
-                                                   <input type="text" class="form-contact-input" name="data" placeholder="Data de Nascimento (dd/mm/aaaa)" autocomplete="off" required />  
+                                                   <input type="text" class="form-contact-input" name="cpf" placeholder="CPF"  maxlength= "11" autocomplete="off"  required pattern="[0-9]{11}" />  
+                                                   <input type="text" class="form-contact-input" name="data" placeholder="Data de Nascimento (dd/mm/aaaa)" autocomplete="off" required pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" />  
                                                    <select name="Celula" class="form-contact-input">
                                                         <option value="celula" selected disabled >Célula</option >
                                                         <option value="Adfin">Administração Financeira</option>
@@ -85,7 +85,7 @@
                                                         <option value="Estrategia" >Estratégia e Desenvolvimento</option>
 
                                                         </select> 
-                                                <input type="text" class="form-contact-input" name="plantao" placeholder="Horário de Plantão (Ex: 14:00/16:00)" autocomplete="off" required />    
+                                                <input type="text" class="form-contact-input" name="plantao" placeholder="Horário de Plantão (Ex: Seg 14:00/16:00)" autocomplete="off" required />    
                                                    <button type="submit"  class="form-contact-button">Enviar</button>  
                                                 </form>  
                                               </div>   ></div>
