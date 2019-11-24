@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/plantao-style.css">
+        <link href="fonts/arlrdbd.ttf" rel="stylesheet">
+        <title>projeto</title>
+        
+    </head>
+    <body>
+        <div class="flex-container">
+            <table class="sidebar">
+                <tr>
+                    <th>
+                        <div class="PG2-RetanguloEsquerda"> 
+                            <center><img src="img/focusfc.png"
+                            srcset="img/focusfc@2x.png 2x,
+                            img/focusfc@3x.png 3x"
+                            class="focusfc"></center>
+
+                            <center> <img src="img/iconPessoa.png"
+                            srcset="icoPessoa(2).png 2x,
+                            iconPessoa(3).png 3x"
+                            class="icons8-pessoa-do-sexo-masculino-64"> </center>
+
+                            <center> <img src="img/iconAtendimento.png"
+                            srcset="img/iconAtendimento@2x.png 2x,
+                            img/iconAtendimento@3x.png 3x"
+                            class="icons8-atendimento-80"> </center>
+
+                            <center> <img src="img/iconCalendario.png"
+                            srcset="img/iconCalendario@2x.png 2x,
+                            img/iconCalendario@3x.png 3x"
+                            class="icons8-calendario-100">
+                            </center>
+
+                            <center> <img src="img/iconCarta.png"
+                            class="iconCarta">
+                            </center>
+
+                            <center> <img src="img/iconCalendario2.png"
+                            srcset="img/iconCalendario2@2x.png 2x,
+                            img/iconCalendario2@3x.png 3x"
+                            class="icons8-calendario-50">
+                            </center>
+
+                            <center> <img src="img/iconRolagem.png"
+                            srcset="img/iconRolagem@2x.png 2x,
+                            img/iconRolagem@3x.png 3x"
+                            class="icons8-rolagem-128">
+                            </center>
+
+                            <center> <img src="img/iconSair.png"
+                            srcset="img/iconSair@2x.png 2x,
+                            img/iconSair@3x.png 3x"
+                            class="icons8-sair-100-2">
+                            </center>
+                        </div>
+                    </th> 
+                </tr>
+            </table>
+            <div class="plantao">
+                <h1 class="plantao-title">Plantões</h1>
+                <form action="">
+                    <table class="plantao-table">
+                        <thead>
+                            <th></th>
+                            <th>Seg</th>
+                            <th>Ter</th>
+                            <th>Qua</th>
+                            <th>Qui</th>
+                            <th>Sex</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>9 - 11</td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                            </tr>
+                            <tr>
+                                <td>11 - 13</td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                            </tr>
+                            <tr>
+                                <td>14 - 16</td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                            </tr>
+                            <tr>
+                                <td>16 - 18</td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                            </tr>
+                            <tr>
+                                <td>18 - 19</td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                                <td class="edit-slot"> - </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button>Salvar</button>
+                </form>
+
+                <div id="modal-background" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">  
+                            <span class="modal-close">&times;</span>
+                            <h2>Plantão</h2>
+                        </div>
+                        <div class="modal-body">
+                            <h3>Pessoas de plantão</h3>
+                            <ul class="modal-lista-plantao">
+                                <li>Pessoa 1</li>
+                                <li>Pessoa 2</li>
+                            </ul>
+                            <form class="modal-form" action="">
+                                <label for="new-person">Colaborador</label>
+                                <input name="new-person" type="text">
+                                <button>Salvar</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var modal = document.getElementById("modal-background");
+            var slots = document.getElementsByClassName("edit-slot");
+            var closeButton = document.getElementsByClassName("modal-close")[0];
+
+            for(let slot of slots) {
+                slot.onclick = function() {
+                    modal.style.display = "block";
+                }
+            }
+
+            closeButton.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
