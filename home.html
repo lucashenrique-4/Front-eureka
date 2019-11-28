@@ -59,7 +59,7 @@
                             class="icons8-rolagem-128"> </a>
                             </center>
 
-                            <center> <img src="img/iconSair.png"
+                            <center> <img class="edit-slot" src="img/iconSair.png"
                             srcset="img/iconSair@2x.png 2x,
                             img/iconSair@3x.png 3x"
                             class="icons8-sair-100-2">
@@ -131,7 +131,43 @@
 
 
     </table>
-
+<div id="modal-background" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">  
+                <span class="modal-close">&times;</span>
+                <h2>O que deseja fazer?</h2>
+            </div>
+            <div class="modal-body">
+                <h3></h3>
+                <ul class="modal-lista-plantao">
+                    <input class="formaBotao" type="button" value="SHARKOUT"> 
+                    <input class="formaBotao" type="button" value="SAIR">
+                </ul>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+var modal = document.getElementById("modal-background");
+var slots = document.getElementsByClassName("edit-slot");
+var closeButton = document.getElementsByClassName("modal-close")[0];
+for(let slot of slots) {
+    slot.onclick = function() {
+        modal.style.display = "block";
+    }
+}
+closeButton.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 
 
